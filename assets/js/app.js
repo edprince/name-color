@@ -36,24 +36,43 @@ function generateColor() {
    tier 4 = 270 < x < 360
    */
     var tier;
-    var test = name.charCodeAt(name.length - 1).toString().charAt(name.charCodeAt(name.length - 1).toString.length);
-    if (test == 4) {
+    console.log("Name: " + name);
+    console.log("Character: " + name.charAt(name.length - 1));
+    console.log("ASCII: " + name.charCodeAt(name.length - 1));
+    console.log("Length:  " + name.charCodeAt(name.length - 1).toString().length);
+    var length = name.charCodeAt(name.length - 1).toString().length;
+
+
+    
+    
+    var test = name
+      .charCodeAt(name.length - 1)
+      .toString()
+      .charAt(length - 1);
+
+    //Assign tiers
+    console.log("Test: " + test);
+    if (test <= 3) {
       tier = 1;
-    } else if (test == 5) {
+      number = 45 
+    } else if (test > 3 && test <= 5) {
       tier = 2;
-    } else if (test == 6) {
+      number = 135;
+    } else if (test > 5 && test <= 8) {
       tier = 3;
+      number = 225;
     } else {
       tier = 4;
+      number = 315;
     }
 
-    console.log("Number to match tier: " + name.charCodeAt(name.length - 1).toString().charAt(1));
-    console.log("Checking letter: " + name.charAt(name.length - 1));
-    console.log("ASCII: " + name.charCodeAt(name.length - 1));
-    console.log("Tier: " + tier);
+    number = number +  Math.floor((name.charCodeAt((name.length - 1)/ 2)) / 2);
+    if (number > 360) {
+      number = 360;
+    }
 
-    number = Math.floor((name.charCodeAt(0) / name.charCodeAt(name.length - 1)) * 100);
-    
+
+    console.log("Tier: " + tier);
     console.log("Newest number: " + number);
 
 
