@@ -21,6 +21,7 @@ input {
   margin-bottom: 2%;
 }
 
+
 .display {
   width: 40%;
   height: 200px;
@@ -40,9 +41,23 @@ input {
 }
 
 .submit {
-  border: solid 2px #AEAEAE;
+  border: solid 1px #AEAEAE;
   border-radius: 5px;
   height: 30px;
   width: 100px;
   background-color: white;
+  -webkit-transition-duration: 0.4s;
 }
+
+.submit:hover {
+  background-color: #4F8DC0;
+  -webkit-transition-duration: 0.4s;
+  color: white;
+  border: solid 1px #4F8DC0;
+
+#hsl {
+  text-align: center;
+  font-weight: bold;
+}
+
+
