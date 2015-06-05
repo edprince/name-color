@@ -1,6 +1,5 @@
 * {
   font-family: helvetica;
-  color: #616161;
 }
 
 body {
@@ -38,6 +37,7 @@ input {
   padding: 1%;
   box-shadow: 4px 4px 10px #366286;
   text-align: center;
+  color: #616161;
 }
 
 .submit {
@@ -54,10 +54,27 @@ input {
   -webkit-transition-duration: 0.4s;
   color: white;
   border: solid 1px #4F8DC0;
+}
 
 #hsl {
   text-align: center;
   font-weight: bold;
 }
 
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 3.8em;
+  margin-bottom: 1%;
+}
 
+.footer a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition-duration: 0.3s;
+}
+
+.footer a:hover {
+  color: #366286; 
+  -webkit-transition-duration: 0.3s;
+}
