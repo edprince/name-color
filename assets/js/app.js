@@ -88,7 +88,7 @@ function generateColor() {
     }
     console.log(average);
  */   
-    var color = "hsl(" + number + ", 80%, 75%)";
+    var color = "hsl(" + number + ",60%, 50%)";
 
     document.getElementById('display').style.background = color;
     document.getElementById('hsl').innerHTML = "HSL = (" + number + ", 100%, 100%)";
