@@ -9,7 +9,9 @@ function generateColor() {
     var g = name.charCodeAt(name.length - 1);
     var b = name.charCodeAt(Math.floor(name.length / 2));
     var number;
-      
+    
+    var s = "60%";
+    var l = "75%";
       
 
 
@@ -24,7 +26,7 @@ function generateColor() {
     if (name.charCodeAt(0).toString().charAt(0) % 2) {
       number = 0 + Math.floor(number);
     } else {
-      number = 360 - Math.floor(number);
+      number = 300 - Math.floor(number);
     }
     
     console.log("Newest number: " + number);
@@ -42,10 +44,10 @@ function generateColor() {
     }
     console.log(average);
     
-    var color = "hsl(" + average + ", 80%, 75%)";
+    var color = "hsl(" + number + ", 60%, 75%)";
 
     document.getElementById('display').style.background = color;
-    document.getElementById('hsl').innerHTML = "HSL = (" + number + ", 100%, 100%)";
+    document.getElementById('hsl').innerHTML = "HSL = (" + number + ", " + s + ", " + l + ")";
   } else {
   alert("Please enter a valid string");
   }
