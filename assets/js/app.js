@@ -9,7 +9,9 @@ function generateColor() {
     var g = name.charCodeAt(name.length - 1);
     var b = name.charCodeAt(Math.floor(name.length / 2));
     var number;
-      
+    
+    var s = "60%";
+    var l = "75%";
       
 
 
@@ -24,7 +26,7 @@ function generateColor() {
     if (name.charCodeAt(0).toString().charAt(0) % 2) {
       number = 0 + Math.floor(number);
     } else {
-      number = 360 - Math.floor(number);
+      number = 300 - Math.floor(number);
     }
     console.log(name.charCodeAt(0));
     console.log(name.charCodeAt(name.length - 1));
@@ -87,11 +89,19 @@ function generateColor() {
       console.log('Average: ' + average);
     }
     console.log(average);
+<<<<<<< HEAD
  */   
     var color = 'hsl(' + number + ',60%, 50%)';
 
     document.getElementById('display').style.background = color;
     document.getElementById('hsl').innerHTML = 'HSL = (' + number + ', 100%, 100%)';
+=======
+    
+    var color = "hsl(" + number + ", 60%, 75%)";
+
+    document.getElementById('display').style.background = color;
+    document.getElementById('hsl').innerHTML = "HSL = (" + number + ", " + s + ", " + l + ")";
+>>>>>>> master
   } else {
   alert('Please enter a valid string');
   }
