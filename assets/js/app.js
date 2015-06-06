@@ -89,19 +89,13 @@ function generateColor() {
       console.log('Average: ' + average);
     }
     console.log(average);
-<<<<<<< HEAD
  */   
-    var color = 'hsl(' + number + ',60%, 50%)';
 
-    document.getElementById('display').style.background = color;
-    document.getElementById('hsl').innerHTML = 'HSL = (' + number + ', 100%, 100%)';
-=======
     
     var color = "hsl(" + number + ", 60%, 75%)";
 
     document.getElementById('display').style.background = color;
     document.getElementById('hsl').innerHTML = "HSL = (" + number + ", " + s + ", " + l + ")";
->>>>>>> master
   } else {
   alert('Please enter a valid string');
   }
